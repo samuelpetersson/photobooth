@@ -27,7 +27,7 @@
   1. ```sudo apt-get clean```
   2. ```sudo apt-get update```
   3. ```sudo apt-get upgrade```
-3. Donwload openframeworks
+3. Download openframeworks
   1. ```curl -O <url to openframeworks tar>```
   2. ```mkdir openFrameworks```
   3. ```tar vxfz <path to tar> -C openFrameworks --strip-components 1```
