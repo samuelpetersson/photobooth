@@ -4,7 +4,7 @@
 
 ## Setup
 
-### Install Raspbian
+### Install Raspberry PI
 
 1. Format SD card
   1. ```diskutil list```
@@ -13,6 +13,12 @@
   1. ```diskutil list```
   2. ```diskutil unmountDisk /dev/<disk# from diskutil>```
   3. ```sudo dd bs=1m if=image.img of=/dev/<disk# from diskutil>```
+  4. Wait.
+3. Enable Camera
+  1. ```sudo raspi-config```
+  2. Enable camera
+  3. Reboot
+
 
 ### Install openframeworks
 
@@ -36,7 +42,9 @@
   2. ```sudo scripts/linux/debian_armv6/install_dependencies.sh```
   3. ```make Release -C libs/openFrameworksCompiled/project```
 
+
 ### Run
+
 1. Compile project
   1. ```cd <path to photobooth>```
   2. ```make```
