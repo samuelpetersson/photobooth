@@ -3,6 +3,10 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
 
+	wiringPiSetupGpio();
+	pinMode(22, INPUT);
+	pullUpDnControl(22, PUD_UP);
+
 	ofHideCursor();
 
 	gui.setup(); 
@@ -22,6 +26,12 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
+
+	
+	if(digitalRead(22) == 0) {
+		doSaveImage = true;
+	}
+
 	if(doSaveImage) {
 		string path = ofToDataPath(ofGetTimestampString() + ".raw", true);
 
@@ -38,10 +48,7 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
 
-
-	videoTexture.draw(0, 0, 1920, 1200);
-
-	gui.draw();
+	videoTexture.draw(310, 200, 1280, 800);
 }
 
 //--------------------------------------------------------------

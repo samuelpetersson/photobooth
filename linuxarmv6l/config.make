@@ -71,6 +71,8 @@ PROJECT_EXTERNAL_SOURCE_PATHS = ../src
 #
 #   Note: Leave a leading space when adding list items with the += operator
 ################################################################################
+PROJECT_LDFLAGS =-Wl,-rpath=./libs
+PROJECT_LDFLAGS+= -lwiringPi 
 
 # Currently, shared libraries that are needed are copied to the 
 # $(PROJECT_ROOT)/bin/libs directory.  The following LDFLAGS tell the linker to

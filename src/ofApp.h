@@ -4,6 +4,7 @@
 #include "ofxGui.h"
 #include "ofAppEGLWindow.h"
 #include "ofxRPiCameraVideoGrabber.h"
+#include "wiringPi.h"
 
 class ofApp : public ofBaseApp{
 
