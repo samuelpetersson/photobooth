@@ -8,7 +8,7 @@ void PhotoboothApp::setup(){
 
 	ofHideCursor();
 
-	headline.loadFont("headline.ttf", 240);
+	//headline.loadFont("headline.ttf", 240);
 
 }
 
@@ -79,7 +79,7 @@ void PhotoboothApp::drawFlash(){
 	float t = flash / 1.0;
 
 	ofSetColor(255, 255, 255, 255 * t);
-	ofDrawRectangle(0, 0, ofGetWindowWidth(), ofGetWindowHeight());
+	//ofDrawRectangle(0, 0, ofGetWindowWidth(), ofGetWindowHeight());
 
 }
 

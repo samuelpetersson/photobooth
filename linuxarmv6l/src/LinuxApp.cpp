@@ -1,7 +1,7 @@
 #include "LinuxApp.h"
 
 #define kVideoWidth 1280.0
-#define kVideoHeight 720.0
+#define kVideoHeight 800.0
 
 void LinuxApp::setup(){
 	PhotoboothApp::setup();
