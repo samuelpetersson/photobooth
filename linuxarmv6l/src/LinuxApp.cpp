@@ -19,6 +19,7 @@ void LinuxApp::setup(){
     videoSettings.enablePixels = true;
 
     videoGrabber.setup(videoSettings);
+    videoGrabber.toggleLED();
 
     videoTexture.allocate(kVideoWidth, kVideoHeight, GL_RGBA);
 }

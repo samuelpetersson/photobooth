@@ -8,7 +8,7 @@ void PhotoboothApp::setup(){
 
 	ofHideCursor();
 
-	//headline.loadFont("headline.ttf", 240);
+	headline.loadFont("headline.ttf", 240);
 
 }
 
