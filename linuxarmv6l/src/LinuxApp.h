@@ -1,24 +1,18 @@
 #pragma once
 
-#include "ofMain.h"
-#include "ofxGui.h"
+#include "PhotoboothApp.h"
 #include "ofAppEGLWindow.h"
 #include "ofxRPiCameraVideoGrabber.h"
 #include "wiringPi.h"
 
-class ofApp : public ofBaseApp{
+class LinuxApp : public PhotoboothApp {
 
 	public:
 		void setup();
 		void update();
-		void draw();
-
-		void keyPressed(int key);
-
-	 	ofxPanel gui;
-		ofxFloatSlider radius;
+		void drawCamera();
+		void saveCameraImage(string path);
 
 		ofxRPiCameraVideoGrabber videoGrabber;
 		ofTexture videoTexture;
-		bool doSaveImage;
 };

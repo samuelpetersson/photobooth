@@ -1,11 +1,10 @@
 #include "ofMain.h"
 #include "ofGLProgrammableRenderer.h"
-#include "ofApp.h"
+#include "LinuxApp.h"
 
 //========================================================================
 int main( ){
-
 	ofSetCurrentRenderer(ofGLProgrammableRenderer::TYPE);
-	ofSetupOpenGL(1280, 720, OF_FULLSCREEN);
-	ofRunApp( new ofApp());
+	ofSetupOpenGL(1024, 768, OF_FULLSCREEN);
+	ofRunApp(new LinuxApp());
 }
