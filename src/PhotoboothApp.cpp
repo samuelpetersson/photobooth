@@ -16,7 +16,7 @@ void PhotoboothApp::update(){
 
 	if(flash > 0) {
 		if(flash == 1) {
-			saveCameraImage(ofToDataPath(ofGetTimestampString() + ".png", true));
+			saveCameraImage(ofToDataPath(ofGetTimestampString(), true));
 		}
 		flash -= ofGetLastFrameTime();
 	}
@@ -79,7 +79,7 @@ void PhotoboothApp::drawFlash(){
 	float t = flash / 1.0;
 
 	ofSetColor(255, 255, 255, 255 * t);
-	//ofDrawRectangle(0, 0, ofGetWindowWidth(), ofGetWindowHeight());
+	ofRect(0, 0, ofGetWindowWidth(), ofGetWindowHeight());
 
 }
 
